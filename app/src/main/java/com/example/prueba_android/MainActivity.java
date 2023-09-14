@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.RecyclerView);
         itemAdapter =  new ItemAdapter(this);
 
+        //Holi uwu
+
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
 
         itemAdapter.setData(getData());
