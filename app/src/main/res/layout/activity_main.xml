@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:maxWidth="1000dp"
+    android:minWidth="5000dp"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:fontFamily="serif"
+            android:text="Hola Usuario UwU"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/Animales" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="147dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/Rd_btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Masculino" />
+
+                    <RadioButton
+                        android:id="@+id/Rd_btn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Femenino" />
+
+                    <RadioButton
+                        android:id="@+id/Rd_btn3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Otro..." />
+
+                </RadioGroup>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="189dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/michin" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <ProgressBar
+            android:id="@+id/Pb1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="27dp" />
+
+        <Button
+            android:id="@+id/btn_saludo"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:text="Holi"
+            android:translationX="100dp" />
+
+        <CheckBox
+            android:id="@+id/Cb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opción 1" />
+
+        <CheckBox
+            android:id="@+id/Cb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opción 2" />
+
+        <CheckBox
+            android:id="@+id/Cb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opción 3" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:onClick="Verificar_Cb"
+            android:text="Verificar"
+            android:translationX="100dp" />
+
+        <RatingBar
+            android:id="@+id/Rbar"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:numStars="5"
+            android:translationX="60dp" />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:onClick="Num_Stars"
+            android:text="Número de estrellitas"
+            android:textStyle="bold"
+            android:translationX="100dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp" />
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

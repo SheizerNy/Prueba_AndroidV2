@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Prueba_Android</string>
+
+    <string-array name="Animales">
+        <item>Seleccione...</item>
+        <item>Perro</item>
+        <item>Gato</item>
+        <item>Pez</item>
+        <item>Tortuga</item>
+        <item>Conejo</item>
+    </string-array>
+</resources>
